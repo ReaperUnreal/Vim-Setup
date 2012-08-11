@@ -1,4 +1,5 @@
 " Pathogen Setup {
+	call pathogen#infect()
 " }
 
 " Basics {
