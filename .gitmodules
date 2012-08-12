@@ -16,3 +16,6 @@
 [submodule "bundle/simple-pairs"]
 	path = bundle/simple-pairs
 	url = git://github.com/vim-scripts/simple-pairs.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
