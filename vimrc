@@ -80,4 +80,14 @@
 	nnoremap <M-<> <C-w>K
 	nnoremap <M->> <C-w>L
 	nnoremap <Tab> <C-w><C-w>
+" Tabularize settings
+	nmap <leader>a= :Tabularize /=<CR>
+	vmap <leader>a= :Tabularize /=<CR>
+" }
+
+" Macros {
+	let @c = '0wywiif (! Validation.isSomething($i€kr)) {}Othrow new TypeError("expected Something, got " + typeof pi€kr + ": " + pi€kr);€kd€kd'
+	let @s = 'Iif (! Validation.isSomething($i€kr)) {}€ku06wwywothrow ThorError.create(ErrorCodes.Something, p$i€kr;€kd€kd'
+	let @p = "0/(v%yop0x$x==ma:.s/, /;\\r/gembv'a=v'b:s/;$//ge'av'b:g/^/ norm @c"
+	let @o = "0/(v%yop0x$x==ma:.s/, /;\\r/egmbv'a=v'b:s/;$//ge'av'b:g/^/ norm @s"
 " }
