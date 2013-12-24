@@ -4,10 +4,10 @@
 
 " Mac Stuff { 
 	if has("gui_macvim")
-		map <D-t> :CommandT $TKC<CR>
-		map <D-r> :CommandT $TKS<CR>
+		noremap <D-t> :CommandT $TKC<CR>
+		noremap <D-r> :CommandT $TKS<CR>
 		set wildignore+=**/node_modules/**,*.png,*.jpg,*.wav,*.mp3
-		set guifont=Inconsolata:h13
+		set guifont=Inconsolata\ for\ Powerline:h13
 	endif
 	set wildignore+=js/freyja/node_modules/**
 " }
@@ -58,6 +58,19 @@
 	set foldlevel=10000
 " }
 
+" Powerline {
+	set encoding=utf-8
+	let g:Powerline_symbols = 'fancy'
+	set laststatus=2
+	set rtp+=/Users/gcl/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+" }
+
+" Rainbow Parentheses {
+	au VimEnter * RainbowParenthesesToggle
+	au Syntax * RainbowParenthesesLoadRound
+	au Syntax * RainbowParenthesesLoadBraces
+" }
+
 " Custom Keymaps {
 " Bubble single lines
 	nmap <C-k> ddkP
@@ -83,10 +96,16 @@
 " Tabularize settings
 	nmap <leader>a= :Tabularize /=<CR>
 	vmap <leader>a= :Tabularize /=<CR>
+" CommandT settings
+	nmap <leader>t :CommandT<CR>
+	nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
+" Tagbar settings
+	nmap <leader>] :TagbarToggle<CR>
 " }
 
 " Macros {
-	let @c = '0wywiif (! Validation.isSomething($i€kr)) {}Othrow new TypeError("expected Something, got " + typeof pi€kr + ": " + pi€kr);€kd€kd'
+	let @c = '0wiValidation.assertIsSomething($i€kr);€kd'
+	let @d = '0wywiif (! Validation.isSomething($i€kr)) {}Othrow new TypeError("expected Something, got " + typeof pi€kr + ": " + pi€kr);€kd€kd'
 	let @s = 'Iif (! Validation.isSomething($i€kr)) {}€ku06wwywothrow ThorError.create(ErrorCodes.Something, p$i€kr;€kd€kd'
 	let @p = "0/(v%yop0x$x==ma:.s/, /;\\r/gembv'a=v'b:s/;$//ge'av'b:g/^/ norm @c"
 	let @o = "0/(v%yop0x$x==ma:.s/, /;\\r/egmbv'a=v'b:s/;$//ge'av'b:g/^/ norm @s"

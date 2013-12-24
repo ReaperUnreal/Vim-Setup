@@ -25,3 +25,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/raindow_parentheses"]
+	path = bundle/raindow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git

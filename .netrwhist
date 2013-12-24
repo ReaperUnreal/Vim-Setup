@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/gcl/work/TK/Tiny-Kingdom/server/js/freyja/lib/modules/Fairy'
+let g:netrw_dirhist_2='/Users/gcl/work/TK/Tiny-Kingdom/server/js/freyja/lib/modules'
+let g:netrw_dirhist_3='/Users/gcl/work/TK/Tiny-Kingdom/server/js/freyja/lib/modules/Entity'
+let g:netrw_dirhist_4='/Users/gcl/work/TK/Tiny-Kingdom/server/js/freyja/lib/modules/Entity/0.1.1'
+let g:netrw_dirhist_5='/Users/gcl/work/TK/Tiny-Kingdom/client/js/out'
+let g:netrw_dirhist_6='/Users/gcl/fun/vibe.d/examples'
+let g:netrw_dirhist_7='/Users/gcl/fun/vibe.d/examples/rest'
+let g:netrw_dirhist_8='/Users/gcl/fun/vibe.d/examples/rest/source'
+let g:netrw_dirhist_9='/Users/gcl/work/TK/Tiny-Kingdom/server/js/freyja/lib/modules'
