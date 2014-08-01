@@ -43,12 +43,17 @@
 	set scrolloff=4
 " }
 
-" Test Formatting/Inpu {
+" Test Formatting/Input {
 	filetype plugin indent on
 	set shiftwidth=4
 	set tabstop=4
 	set softtabstop=4
 	set noexpandtab
+" }
+
+" Haskell/Python Formatting/Input {
+	autocmd FileType haskell setlocal tabstop=8 expandtab softtabstop=4 shiftwidth=4 shiftround
+	autocmd FileType python setlocal tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround
 " }
 
 " Code Folding {
@@ -58,11 +63,21 @@
 	set foldlevel=10000
 " }
 
-" Powerline {
+" Airline {
 	set encoding=utf-8
-	let g:Powerline_symbols = 'fancy'
+	let g:airline_powerline_fonts=1
 	set laststatus=2
-	set rtp+=/Users/gcl/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+	let g:airline_theme="luna"
+	let g:airline#extensions#whitespace#enabled=0
+" }
+
+" Git Gutter {
+	let g:gitgutter_sign_column_always=1
+	highlight clear SignColumn
+	highlight GitGutterAdd guifg=#009900 guibg=#1c1c1c
+	highlight GitGutterChange guifg=#bbbb00 guibg=#1c1c1c
+	highlight GitGutterDelete guifg=#ff2222 guibg=#1c1c1c
+	highlight GitGutterChangeDelete guifg=#bbbb00 guibg=#1c1c1c
 " }
 
 " Rainbow Parentheses {
@@ -101,12 +116,23 @@
 	nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
 " Tagbar settings
 	nmap <leader>] :TagbarToggle<CR>
+" eclim Java settings
+	nmap <leader>ji :JavaImport
+	nmap <leader>jo :JavaImportOrganize
+" easy motion settings
+	nmap <A-j> <Plug>(easymotion-j)
+	nmap <A-k> <Plug>(easymotion-k)
+" }
+
+" Custom Unicode Keys {
+	imap <buffer> \to ‚Üí
+	imap <buffer> \gives ‚Üê
+	imap <buffer> \forall ‚àÄ
+	imap <buffer> \exists ‚àÉ
+	imap <buffer> \not ¬¨
 " }
 
 " Macros {
-	let @c = '0wiValidation.assertIsSomething($iÄkr);Äkd'
-	let @d = '0wywiif (! Validation.isSomething($iÄkr)) {}Othrow new TypeError("expected Something, got " + typeof piÄkr + ": " + piÄkr);ÄkdÄkd'
-	let @s = 'Iif (! Validation.isSomething($iÄkr)) {}Äku06wwywothrow ThorError.create(ErrorCodes.Something, p$iÄkr;ÄkdÄkd'
+	let @c = 'IValidation.assertIsSomething(A);j'
 	let @p = "0/(v%yop0x$x==ma:.s/, /;\\r/gembv'a=v'b:s/;$//ge'av'b:g/^/ norm @c"
-	let @o = "0/(v%yop0x$x==ma:.s/, /;\\r/egmbv'a=v'b:s/;$//ge'av'b:g/^/ norm @s"
 " }
