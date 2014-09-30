@@ -52,3 +52,6 @@
 [submodule "bundle/vim-csharp"]
 	path = bundle/vim-csharp
 	url = git://github.com/OrangeT/vim-csharp.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git://github.com/tpope/vim-vinegar.git

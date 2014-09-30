@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/gcl/work/BVGSlots/client/interface'
-let g:netrw_dirhist_2='/Users/gcl/work/BVGSlots/client/interface/machines'
-let g:netrw_dirhist_3='/Users/gcl/work/BVGSlots/client/interface/machines/lucky_7'
-let g:netrw_dirhist_4='/Users/gcl/work/BVGSlots/client'
-let g:netrw_dirhist_5='/Users/gcl/work/BVGSlots/client/fonts'
-let g:netrw_dirhist_6='/Users/gcl/work/BVGSlots/client'
-let g:netrw_dirhist_7='/Users/gcl/work/BVGSlots/client/layouts'
-let g:netrw_dirhist_8='/Users/gcl'
-let g:netrw_dirhist_9='/Users/gcl/.config/fish'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/gcl/work/BVGSlots/server/slots'

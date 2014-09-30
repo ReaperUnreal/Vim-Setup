@@ -51,9 +51,10 @@
 	set noexpandtab
 " }
 
-" Haskell/Python Formatting/Input {
+" Programming Language Specific Formatting/Input {
 	autocmd FileType haskell setlocal tabstop=8 expandtab softtabstop=4 shiftwidth=4 shiftround
 	autocmd FileType python setlocal tabstop=4 expandtab softtabstop=4 shiftwidth=4 shiftround
+	autocmd FileType cs setlocal tabstop=4 noexpandtab softtabstop=4 shiftwidth=4 shiftround
 " }
 
 " Code Folding {
