@@ -123,6 +123,8 @@
 " easy motion settings
 	nmap <A-j> <Plug>(easymotion-j)
 	nmap <A-k> <Plug>(easymotion-k)
+" black hole delete
+	nmap <leader>d "_d
 " }
 
 " Custom Unicode Keys {
