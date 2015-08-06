@@ -10,6 +10,7 @@
 		set guifont=Inconsolata\ for\ Powerline:h13
 	endif
 	set wildignore+=js/freyja/node_modules/**
+	set rtp+=/usr/local/Cellar/fzf/0.8.6
 " }
 
 " Basics {
@@ -55,6 +56,7 @@
 	autocmd FileType haskell setlocal tabstop=8 expandtab softtabstop=4 shiftwidth=4 shiftround
 	autocmd FileType python setlocal tabstop=4 noexpandtab softtabstop=4 shiftwidth=4 shiftround
 	autocmd FileType cs setlocal tabstop=4 noexpandtab softtabstop=4 shiftwidth=4 shiftround
+	let g:jsx_ext_required=0
 " }
 
 " Code Folding {
@@ -117,14 +119,21 @@
 	nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
 " Tagbar settings
 	nmap <leader>] :TagbarToggle<CR>
-" eclim Java settings
-	nmap <leader>ji :JavaImport
-	nmap <leader>jo :JavaImportOrganize
 " easy motion settings
 	nmap <A-j> <Plug>(easymotion-j)
 	nmap <A-k> <Plug>(easymotion-k)
 " black hole delete
 	nmap <leader>d "_d
+" visual studio shift+enter
+	imap <C-CR> <C-o>A;<C-c>:s/,;$/,/e<CR>:s/;\+$/;/e<CR>o
+	nmap <C-CR> A;<C-c>:s/,;$/,/e<CR>:s/;\+$/;/e<CR>o
+" }
+
+" Rdio {
+	nnoremap <leader>rp :RdioPlayPause<CR>
+	nnoremap <leader>rl :RdioPlaylists<CR>
+	nnoremap <leader>rn :RdioNext<CR>
+	nnoremap <leader>rf :RdioFavorite<CR>
 " }
 
 " Custom Unicode Keys {
