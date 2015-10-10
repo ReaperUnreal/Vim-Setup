@@ -57,6 +57,7 @@
 	autocmd FileType python setlocal tabstop=4 noexpandtab softtabstop=4 shiftwidth=4 shiftround
 	autocmd FileType cs setlocal tabstop=4 noexpandtab softtabstop=4 shiftwidth=4 shiftround
 	let g:jsx_ext_required=0
+	let g:OmniSharp_server_type = 'roslyn'
 " }
 
 " Code Folding {
