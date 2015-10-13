@@ -44,6 +44,66 @@
 	set scrolloff=4
 " }
 
+" Neocomplete Setup {
+	" Disable AutoComplPop.
+	let g:acp_enableAtStartup = 0
+	" Use neocomplete.
+	let g:neocomplete#sources#syntax#min_keyword_length = 3
+	let g:neocomplete#enable_at_startup = 1
+	" Don't Use smartcase.
+	let g:neocomplete#enable_smart_case = 0
+	let g:neocomplete#enable_auto_close_preview = 0
+	" Define dictionary.
+	let g:neocomplete#sources#dictionary#dictionaries = {
+		\ 'default' : '',
+		\ 'vimshell' : $HOME.'/.vimshell_hist'
+		\ }
+
+	" Plugin key-mappings.
+	inoremap <expr><C-g>     neocomplete#undo_completion()
+	inoremap <expr><C-l>     neocomplete#complete_common_string()
+
+	" Recommended key-mappings.
+	" <CR>: close popup and save indent.
+	inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+	function! s:my_cr_function()
+	  "return neocomplete#close_popup() . "\<CR>"
+	  " For no inserting <CR> key.
+	  return pumvisible() ? neocomplete#close_popup() : "\<CR>"
+	endfunction
+	" <TAB>: completion.
+	inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+	inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<TAB>"
+
+	inoremap<expr><Space> pumvisible() ? neocomplete#close_popup()."\<SPACE>" : "\<SPACE>"
+
+	" <C-h>, <BS>: close popup and delete backword char.
+	inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+	inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+	inoremap <expr><C-y>  neocomplete#close_popup()
+	inoremap <expr><C-e>  neocomplete#cancel_popup()
+
+	let g:neocomplete#enable_auto_select = 0
+	let g:neocomplete#disable_auto_complete = 0
+
+	" Enable heavy omni completion.
+
+	call neocomplete#custom#source('_', 'sorters', [])
+
+	if !exists('g:neocomplete#sources')
+			let g:neocomplete#sources = {}
+	endif
+
+	if !exists('g:neocomplete#sources#omni#input_patterns')
+	  let g:neocomplete#sources#omni#input_patterns = {}
+	endif
+
+	let g:neocomplete#sources#omni#input_patterns.cs = '[a-zA-Z0-9_]\+'
+	let g:neocomplete#sources.cs = ['omni']
+	let g:neocomplete#enable_refresh_always = 0
+	let g:echodoc_enable_at_startup = 1
+" }
+
 " Test Formatting/Input {
 	filetype plugin indent on
 	set shiftwidth=4
@@ -90,6 +150,10 @@
 	au Syntax * RainbowParenthesesLoadBraces
 " }
 
+" CtrlP Setup {
+	let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden --ignore .git --ignore .svn --ignore .DS_Store --ignore "**/*.pyc" --ignore .gitignore --ignore .meta -g ""'
+" }
+
 " Custom Keymaps {
 " Bubble single lines
 	nmap <C-k> ddkP
@@ -118,6 +182,9 @@
 " CommandT settings
 	nmap <leader>t :CommandT<CR>
 	nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
+" CtrlP settings
+	nmap <leader>t :CtrlP<CR>
+	nmap <leader>T :CtrlP<CR><F5>
 " Tagbar settings
 	nmap <leader>] :TagbarToggle<CR>
 " easy motion settings
