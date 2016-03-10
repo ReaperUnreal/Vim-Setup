@@ -179,9 +179,6 @@
 " Tabularize settings
 	nmap <leader>a= :Tabularize /=<CR>
 	vmap <leader>a= :Tabularize /=<CR>
-" CommandT settings
-	nmap <leader>t :CommandT<CR>
-	nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
 " CtrlP settings
 	nmap <leader>t :CtrlP<CR>
 	nmap <leader>T :CtrlP<CR><F5>
