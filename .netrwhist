@@ -1,6 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/gcl/work/tiny-tappers/client/thor'
-let g:netrw_dirhist_2='/Users/gcl/work/tiny-tappers/client/thor/source'
-let g:netrw_dirhist_3='/Users/gcl/work/tiny-tappers/client/thor/source/resources'
-let g:netrw_dirhist_4='/Users/gcl/work/tiny-tappers/client/pipeline'
+let g:netrw_dirhist_cnt =0
