@@ -179,6 +179,8 @@
 " Tabularize settings
 	nmap <leader>a= :Tabularize /=<CR>
 	vmap <leader>a= :Tabularize /=<CR>
+	nmap <leader>a: :Tabularize /:<CR>
+	vmap <leader>a: :Tabularize /:<CR>
 " CtrlP settings
 	nmap <leader>t :CtrlP<CR>
 	nmap <leader>T :CtrlP<CR><F5>
@@ -194,13 +196,6 @@
 	nmap <C-CR> A;<C-c>:s/,;$/,/e<CR>:s/;\+$/;/e<CR>o
 " }
 
-" Rdio {
-	nnoremap <leader>rp :RdioPlayPause<CR>
-	nnoremap <leader>rl :RdioPlaylists<CR>
-	nnoremap <leader>rn :RdioNext<CR>
-	nnoremap <leader>rf :RdioFavorite<CR>
-" }
-
 " Custom Unicode Keys {
 	imap <buffer> \to →
 	imap <buffer> \gives ←
@@ -212,4 +207,12 @@
 " Macros {
 	let @c = 'IValidation.assertIsSomething(A);j'
 	let @p = "0/(v%yop0x$x==ma:.s/, /;\\r/gembv'a=v'b:s/;$//ge'av'b:g/^/ norm @c"
+" }
+" Memes {
+	function WIDE()
+		s/\(\w\)/\U\1 /ge
+		s/\s\+/ /ge
+		noh
+	endfunction
+	command! WIDE call WIDE()
 " }

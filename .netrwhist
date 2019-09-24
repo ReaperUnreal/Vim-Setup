@@ -1,2 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/gcl/work/Norns/inventory/yoworld/stage_feature2/group_vars'
+let g:netrw_dirhist_2='/Users/gcl/work/Norns/inventory/yoworld/stage_feature2'
+let g:netrw_dirhist_1='/Users/gcl/work/Norns/inventory/yoworld'
+let g:netrw_dirhist_0='/Users/gcl/work/YoWorld/www/adm.yoville.com/viking_tools/content_management/sync_tools'
+let g:netrw_dirhist_9='/Users/gcl/work/Norns/templates/yoworld/php'
+let g:netrw_dirhist_8='/Users/gcl/work/craftgramsaga/server/cgs-protocol/src/main/bam/com/bigvikinggames/cgs/bam'
+let g:netrw_dirhist_7='/Users/gcl/work/craftgramsaga/server/cgs-protocol/src/main/bam/com/bigvikinggames/cgs'
+let g:netrw_dirhist_6='/Users/gcl/work/craftgramsaga/server/cgs-protocol/src/main/bam/com/bigvikinggames'
+let g:netrw_dirhist_5='/Users/gcl/work/craftgramsaga/server/cgs-protocol/src/main/bam/com'
+let g:netrw_dirhist_4='/Users/gcl/work/craftgramsaga/server/cgs-protocol/src/main/bam'

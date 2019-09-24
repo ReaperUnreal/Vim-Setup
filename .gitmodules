@@ -73,3 +73,15 @@
 [submodule "bundle/neocomplete"]
 	path = bundle/neocomplete
 	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/vim-fswitch"]
+	path = bundle/vim-fswitch
+	url = git@github.com:derekwyatt/vim-fswitch.git
+[submodule "bundle/vim-solidity"]
+	path = bundle/vim-solidity
+	url = git@github.com:tomlion/vim-solidity.git
+[submodule "bundle/purescript-vim"]
+	path = bundle/purescript-vim
+	url = git@github.com:purescript-contrib/purescript-vim.git
