@@ -85,3 +85,15 @@
 [submodule "bundle/purescript-vim"]
 	path = bundle/purescript-vim
 	url = git@github.com:purescript-contrib/purescript-vim.git
+[submodule "bundle/nginx.vim"]
+	path = bundle/nginx.vim
+	url = git@github.com:chr4/nginx.vim.git
+[submodule "bundle/traces.vim"]
+	path = bundle/traces.vim
+	url = git@github.com:markonm/traces.vim.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
+[submodule "bundle/vim-system-copy"]
+	path = bundle/vim-system-copy
+	url = git@github.com:christoomey/vim-system-copy.git

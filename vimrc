@@ -194,6 +194,8 @@
 " visual studio shift+enter
 	imap <C-CR> <C-o>A;<C-c>:s/,;$/,/e<CR>:s/;\+$/;/e<CR>o
 	nmap <C-CR> A;<C-c>:s/,;$/,/e<CR>:s/;\+$/;/e<CR>o
+" Json Utility
+	nmap <leader>j= :%!python -m json.tool<CR>
 " }
 
 " Custom Unicode Keys {
