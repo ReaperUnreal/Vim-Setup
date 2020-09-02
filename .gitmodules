@@ -97,3 +97,6 @@
 [submodule "bundle/vim-system-copy"]
 	path = bundle/vim-system-copy
 	url = git@github.com:christoomey/vim-system-copy.git
+[submodule "bundle/vim-actionscript"]
+	path = bundle/vim-actionscript
+	url = git@github.com:jeroenbourgois/vim-actionscript.git

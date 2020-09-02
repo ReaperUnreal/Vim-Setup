@@ -217,4 +217,14 @@
 		noh
 	endfunction
 	command! WIDE call WIDE()
+	function CLAP()
+		s/\(\S*\s\)/\1👏 /ge
+		noh
+	endfunction
+	command! CLAP call CLAP()
+	function SPONGEBOB()
+		s/\(\w\)\(\s*\)\(\w\)/\L\1\2\U\3/ge
+		noh
+	endfunction
+	command! SPONGEBOB call SPONGEBOB()
 " }
